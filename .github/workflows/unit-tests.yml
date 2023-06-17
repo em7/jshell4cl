@@ -25,9 +25,7 @@ jobs:
         run: sudo apt install sbcl
       - name: install quicklisp
         run: |
-          curl -O http://beta.quicklisp.org/quicklisp.lisp
-          curl -O http://beta.quicklisp.org/quicklisp.lisp.asc
-          gpg --verify quicklisp.lisp.asc quicklisp.lisp
+          curl -O https://beta.quicklisp.org/quicklisp.lisp
       - name: load and test
         run: sbcl --no-userinit --no-sysinit --script run-tests.lisp
         
