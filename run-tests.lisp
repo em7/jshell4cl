@@ -7,6 +7,6 @@
 
 (asdf:load-system :jshell4cl)
 (if (asdf:test-system :jshell4cl)
-  (exit 0)
-  (exit 1))
+  (exit :code 0)
+  (exit :code 1))
 
