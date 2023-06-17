@@ -6,7 +6,7 @@
 (ql:quickload :jshell4cl/tests)
 
 (asdf:load-system :jshell4cl)
-(if (asdf:test-system :jshell4cl)
+(if (jshell4cl/tests/main:test-quasi)
   (exit :code 0)
   (exit :code 1))
 

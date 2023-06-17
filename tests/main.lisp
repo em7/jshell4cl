@@ -3,7 +3,8 @@
         #:jshell4cl/main
         #:fiveam)
   (:export #:run!
-           #:all-tests))
+           #:all-tests
+           #:test-quasi))
 (in-package #:jshell4cl/tests/main)
 
 (def-suite all-tests
