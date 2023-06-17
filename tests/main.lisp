@@ -16,4 +16,4 @@
 
 (test test-hello-world
       (let ((expected "Hello World from :jshell4cl"))
-        (is (equal expected (hello-world)))))
+        (is (eq expected (hello-world)))))
