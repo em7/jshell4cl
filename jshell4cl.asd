@@ -16,7 +16,7 @@
   :license "MIT"
   :depends-on (#:jshell4cl
                #:fiveam)
-  :components ((:module "src"
+  :components ((:module "tests"
                 :components
                 ((:file "main"))))
   :perform (test-op (op c)

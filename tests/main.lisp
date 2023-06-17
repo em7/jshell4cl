@@ -4,7 +4,7 @@
         #:fiveam)
   (:export #:run!
            #:all-tests))
-(in-package :jshell4cl/tests/main)
+(in-package #:jshell4cl/tests/main)
 
 (def-suite all-tests
   :description "The master suite")
@@ -16,4 +16,4 @@
 
 (test test-hello-world
       (let ((expected "Hello World from :jshell4cl"))
-        (is (eql expected (hello-world)))))
+        (is (equal expected (hello-world)))))
