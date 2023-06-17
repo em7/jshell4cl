@@ -14,7 +14,7 @@
   :description "JShell integration to Common Lisp"
   :author "em7"
   :license "MIT"
-  :depends-on (#:jshell4cl
+  :depends-on ("jshell4cl"
                #:fiveam)
   :components ((:module "tests"
                 :components
