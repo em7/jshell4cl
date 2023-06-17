@@ -1,3 +1,5 @@
+;; installs quicklisp and runs tests in a CI/CD pipeline
+
 (load "quicklisp.lisp")
 (quicklisp-quickstart:install)
 (push (uiop:getcwd) asdf:*central-registry*)
