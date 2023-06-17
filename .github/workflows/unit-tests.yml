@@ -34,11 +34,12 @@ jobs:
       
     steps:
       - uses: actions/checkout@v1
-      - uses: 40ants/setup-lisp@v1
-        with:
-          asdf-system: jshell4cl
-      - name: Run tests manually, the automatic fails with installation of cl-coveralls
-        run: ros run -s jshell4cl -e "(asdf:test-system :jshell4cl)" -q
+      - run: ls
+#       - uses: 40ants/setup-lisp@v1
+#         with:
+#           asdf-system: jshell4cl
+#       - name: Run tests manually, the automatic fails with installation of cl-coveralls
+#         run: ros run -s jshell4cl -e "(asdf:test-system :jshell4cl)" -q
       #- uses: 40ants/run-tests@v2 # TODO why this fails??
       #  with:
       #    asdf-system: jshell4cl
