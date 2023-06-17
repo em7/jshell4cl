@@ -38,12 +38,12 @@ jobs:
         with:
           asdf-system: jshell4cl
       - name: Run tests manually, the automatic fails with installation of cl-coveralls
-        run: ros run -s cl-morse -e "(asdf:test-system :jshell4cl)" -q
+        run: ros run -s jshell4cl -e "(asdf:test-system :jshell4cl)" -q
       #- uses: 40ants/run-tests@v2 # TODO why this fails??
       #  with:
-      #    asdf-system: cl-morse
+      #    asdf-system: jshell4cl
 #       - name: Run critic
 #         run: |
 #           ros install  40ants/40ants-critic
-#           lisp-critic cl-morse
+#           lisp-critic jshell4cl
         
