@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: install sbcl
-        run: apt install sbcl
+        run: sudo apt install sbcl
       - name: install quicklisp
         run: |
           curl -O https://beta.quicklisp.org/quicklisp.lisp
