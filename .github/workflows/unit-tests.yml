@@ -27,7 +27,9 @@ jobs:
         run: |
           curl -O https://beta.quicklisp.org/quicklisp.lisp
       - name: add jshell4cl to quicklisp
-        run: ln -s `pwd` ~/quicklisp/local-projects/jshell4cl
+        run: |
+          mkdir ~/quicklisp/local-projects
+          ln -s `pwd` ~/quicklisp/local-projects/jshell4cl
       - name: load and test
         run: sbcl --no-userinit --no-sysinit --script run-tests.lisp
         
