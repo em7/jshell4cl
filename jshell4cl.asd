@@ -6,7 +6,8 @@
   :depends-on (#:trivial-garbage #:uiop)
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "main")
+                 (:file "java-process"))))
   :in-order-to ((test-op (test-op "jshell4cl/tests"))))
 
 (defsystem "jshell4cl/tests"
